@@ -22,6 +22,7 @@ module.exports = function (env) {
         DB_USER: env.PGUSER,
         DB_PASSWORD: env.PGPASSWORD,
 
+        // Aws settings
         STORAGE_LOCATIONS:"local,aws",
 
         STORAGE_LOCAL_DRIVER:"local",
@@ -31,5 +32,9 @@ module.exports = function (env) {
         STORAGE_AWS_SECRET:"Encswj/SGZ0oXSBguoYYTroZG4dgzZ0SXz/pB0/5",
         STORAGE_AWS_REGION:"eu-west-3",
         STORAGE_AWS_BUCKET:"charles-cantin",
+
+        //CORS settings
+        CORS_ENABLED: "true",
+        CORS_ORIGIN: "true"
     };
 };
